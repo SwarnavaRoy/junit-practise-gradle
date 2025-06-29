@@ -25,7 +25,7 @@ public class TaskManager {
         return true;
     }
 
-    public boolean changeTaskStatus(String taskId, String newStatus) {
+    public boolean changeTaskStatus(String taskId, Status newStatus) {
         Task task = tasks.get(taskId);
         if (task == null)
             return false;
